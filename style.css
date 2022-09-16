@@ -52,53 +52,45 @@
 }
 
 .navbar__item{
-    height: 80px;
+    height: 30px;
 }
 
 .navbar__link{
     color: #FFF;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
 }
-
-.navbar__link:hover{
+ /* Works */
+/* .navbar__link:hover{
     color: #181818;
     transition: all 0.3s ease;
-}
-
-/* .navbar__link::before,
-.navbar__link::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #E65454;
-    transform: scaleX(0);
-    transition: transform .25s;
-}
+} */
 
 .navbar__link::before{
-    top: -3px;
-    transform-origin: left;
-}
-
-.navbar__link::after{
-    bottom: -3px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 0px;
+    background-color: #6A82FB;
+    bottom: 0;
+    left: 0;
     transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
 }
 
-.navbar__link:hover::before,
-.navbar__link:hover::after{
+.navbar__link:hover::before{
+    transform-origin: left;
     transform: scaleX(1);
 }
- */
 
-
+/* Mobile support */
 
 /* #FC5C7D 0%,
 #6A82FB 100% */
